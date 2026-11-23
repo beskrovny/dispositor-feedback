@@ -1,0 +1,107 @@
+name: Bug Report
+description: Report a bug in the Dispositor browser extension
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a bug! Please fill out the form below with as much detail as possible.
+
+        **Important:** Never submit passwords, OAuth codes, access tokens, refresh tokens, or other sensitive information. Do not include private personal data. Describe the problem without exposing account credentials.
+
+  - type: input
+    id: title
+    attributes:
+      label: Bug Title
+      description: A short, descriptive title for the bug
+      placeholder: e.g., "Extension crashes when saving a session with 50+ tabs"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear and concise description of the problem
+      placeholder: What happened? What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Numbered steps to reproduce the issue
+      placeholder: |
+        1. Open the extension popup
+        2. Click "Save Session"
+        3. Observe the error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What you expected to happen
+      placeholder: The session should be saved without errors
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened (include error messages if any)
+      placeholder: The extension crashes and shows "Cannot read property X of undefined"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      description: Which browser are you using?
+      options:
+        - Google Chrome
+        - Mozilla Firefox
+        - Other (specify in description)
+    validations:
+      required: true
+
+  - type: input
+    id: browser_version
+    attributes:
+      label: Browser Version
+      description: The exact browser version (e.g., Chrome 125.0.6422.112)
+      placeholder: e.g., 125.0.6422.112
+    validations:
+      required: true
+
+  - type: input
+    id: extension_version
+    attributes:
+      label: Dispositor Extension Version
+      description: The version of the Dispositor extension you have installed
+      placeholder: e.g., 0.0.1-beta
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or Attachments (Optional)
+      description: Drag and drop screenshots, screen recordings, or log files here. Do not include sensitive information.
+      placeholder: (Optional) Attach screenshots or logs
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Confirmation
+      description: By submitting this report, you confirm that you have not included any sensitive information
+      options:
+        - label: I confirm this report contains no passwords, tokens, OAuth codes, or other credentials
+          required: true
+        - label: I confirm this report contains no private personal data
+          required: true

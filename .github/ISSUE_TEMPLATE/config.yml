@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a Bug
+    url: https://github.com/beskrovny/dispositor-feedback/issues/new?template=bug_report.yml
+    about: Report a bug in the Dispositor browser extension
+  - name: Feature Request
+    url: https://github.com/beskrovny/dispositor-feedback/issues/new
+    about: Suggest a new feature or improvement
+  - name: Security Issue
+    url: https://github.com/beskrovny/dispositor/security/advisories/new
+    about: Report a security vulnerability privately
